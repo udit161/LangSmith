@@ -8,7 +8,7 @@ load_dotenv()
 # Simple one-line prompt
 prompt = PromptTemplate.from_template("{question}")
 
-model = ChatOpenAI()
+model = ChatGoogleGenerativeAI()
 parser = StrOutputParser()
 
 # Chain: prompt → model → parser
